@@ -1,0 +1,768 @@
+﻿
+@{
+    ViewBag.Title = "PuanTablolari";
+}
+
+<h2>PuanTablolari</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="tab point_table_tab fixture_tab" id="div_league_standings" style="display: block;">
+                <div class="selections">
+                    
+                   
+                    <h3 id="h_selected_season_and_week_point">
+                        2019/2020 - 34. Hafta
+                    </h3>
+                    <span class="c"></span>
+                </div>
+                <div class="league_navigation">
+                    <a href="#" id="previous_week_standings_league" class="l" title="Önceki Hafta">
+                        <img src="//media-cf.tr.beinsports.com/App_Themes/2011/gfx/arrow_left.png?v1.2">
+                    </a> <a href="#" id="next_week_standings_league" class="r" title="Sonraki Hafta">
+                        <img src="//media-cf.tr.beinsports.com/App_Themes/2011/gfx/arrow_right.png?v1.2">
+                    </a> <span class="c">
+                    </span>
+                </div>
+                
+                <span class="c"></span>
+                <div id="standing-table-select">
+                    <span class="c selected"></span>
+                </div>
+                <span class="c"></span>
+                <div class="table" id="standings_list_content">
+                    <div id="divStandingListContent">
+                        <table>
+                            <tbody>
+                                <tr class="label">
+                                    <th class="status">
+                                    </th>
+                                    <th class="position">
+                                    </th>
+                                    <th class="team_name">
+                                    </th>
+                                    <th class="point">
+                                        O
+                                    </th>
+                                    <th class="point">
+                                        G
+                                    </th>
+                                    <th class="point standings_draw_column">
+                                        B
+                                    </th>
+                                    <th class="point">
+                                        M
+                                    </th>
+                                    <th class="point">
+                                        A
+                                    </th>
+                                    <th class="point">
+                                        Y
+                                    </th>
+                                    <th class="point">
+                                        AV
+                                    </th>
+                                    <th class="fpoint">
+                                        P
+                                    </th>
+                                </tr>
+
+                                <tr class="even marker-green">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        1
+                                    </td>
+                                    <td class="team_link" >
+                                        <a href="https://www.transfermarkt.com.tr/istanbul-buyuksehir-belediyespor/startseite/verein/6890" target="_blank">
+                                            M.Başakşehir
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        20
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        9
+                                    </td>
+                                    <td class="point">
+                                        5
+                                    </td>
+                                    <td class="point">
+                                        65
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        31
+                                    </td>
+                                    <td class="fpoint">
+                                        69
+                                    </td>
+                                </tr>
+                                <tr class="odd marker-blue">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        2
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/trabzonspor/startseite/verein/449 " target="_blank">
+                                            Trabzonspor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        18
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        11
+                                    </td>
+                                    <td class="point">
+                                        5
+                                    </td>
+                                    <td class="point">
+                                        76
+                                    </td>
+                                    <td class="point">
+                                        42
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="fpoint">
+                                        65
+                                    </td>
+                                </tr>
+                                <tr class="even marker-light-orange">
+                                    <td class="status">
+                                        <span class="spr up">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        3
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/besiktas-istanbul/startseite/verein/114" target="_blank">
+                                            Beşiktaş
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        19
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        5
+                                    </td>
+                                    <td class="point">
+                                        10
+                                    </td>
+                                    <td class="point">
+                                        59
+                                    </td>
+                                    <td class="point">
+                                        40
+                                    </td>
+                                    <td class="point">
+                                        19
+                                    </td>
+                                    <td class="fpoint">
+                                        62
+                                    </td>
+                                </tr>
+                                <tr class="odd marker-light-orange">
+                                    <td class="status">
+                                        <span class="spr down">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        4
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/sivasspor/startseite/verein/2381" target="_blank">
+                                            DG Sivasspor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        17
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        9
+                                    </td>
+                                    <td class="point">
+                                        8
+                                    </td>
+                                    <td class="point">
+                                        55
+                                    </td>
+                                    <td class="point">
+                                        38
+                                    </td>
+                                    <td class="point">
+                                        17
+                                    </td>
+                                    <td class="fpoint">
+                                        60
+                                    </td>
+                                </tr>
+                                <tr class="even marker-light-orange">
+                                    <td class="status">
+                                        <span class="spr up">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        5
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/alanyaspor/startseite/verein/11282" target="_blank">
+                                            Aytemiz Alanyaspor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        16
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        9
+                                    </td>
+                                    <td class="point">
+                                        9
+                                    </td>
+                                    <td class="point">
+                                        61
+                                    </td>
+                                    <td class="point">
+                                        37
+                                    </td>
+                                    <td class="point">
+                                        24
+                                    </td>
+                                    <td class="fpoint">
+                                        57
+                                    </td>
+                                </tr>
+                                <tr class="odd ">
+                                    <td class="status">
+                                        <span class="spr down">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        6
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/galatasaray-istanbul/startseite/verein/141" target="_blank">
+                                            Galatasaray
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        15
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        11
+                                    </td>
+                                    <td class="point">
+                                        8
+                                    </td>
+                                    <td class="point">
+                                        55
+                                    </td>
+                                    <td class="point">
+                                        37
+                                    </td>
+                                    <td class="point">
+                                        18
+                                    </td>
+                                    <td class="fpoint">
+                                        56
+                                    </td>
+                                </tr>
+                                <tr class="even ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        7
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/fenerbahce-istanbul/startseite/verein/36" target="_blank">
+                                            Fenerbahçe
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        15
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        8
+                                    </td>
+                                    <td class="point">
+                                        11
+                                    </td>
+                                    <td class="point">
+                                        58
+                                    </td>
+                                    <td class="point">
+                                        46
+                                    </td>
+                                    <td class="point">
+                                        12
+                                    </td>
+                                    <td class="fpoint">
+                                        53
+                                    </td>
+                                </tr>
+                                <tr class="odd ">
+                                    <td class="status">
+                                        <span class="spr up">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        8
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/gaziantep-buyuksehir-belediyespor/startseite/verein/2832" target="_blank">
+                                            Gaziantep FK
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        11
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        13
+                                    </td>
+                                    <td class="point">
+                                        10
+                                    </td>
+                                    <td class="point">
+                                        49
+                                    </td>
+                                    <td class="point">
+                                        50
+                                    </td>
+                                    <td class="point">
+                                        -1
+                                    </td>
+                                    <td class="fpoint">
+                                        46
+                                    </td>
+                                </tr>
+                                <tr class="even ">
+                                    <td class="status">
+                                        <span class="spr down">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        9
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/medical-park-antalyaspor/startseite/verein/589" target="_blank">
+                                            Antalyaspor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        11
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        12
+                                    </td>
+                                    <td class="point">
+                                        11
+                                    </td>
+                                    <td class="point">
+                                        41
+                                    </td>
+                                    <td class="point">
+                                        52
+                                    </td>
+                                    <td class="point">
+                                        -11
+                                    </td>
+                                    <td class="fpoint">
+                                        45
+                                    </td>
+                                </tr>
+                                <tr class="odd ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        10
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/kasimpasa/startseite/verein/10484" target="_blank">
+                                            Kasımpaşa
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        12
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        7
+                                    </td>
+                                    <td class="point">
+                                        15
+                                    </td>
+                                    <td class="point">
+                                        53
+                                    </td>
+                                    <td class="point">
+                                        58
+                                    </td>
+                                    <td class="point">
+                                        -5
+                                    </td>
+                                    <td class="fpoint">
+                                        43
+                                    </td>
+                                </tr>
+                                <tr class="even ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        11
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/goztepe-izmir/startseite/verein/1467" target="_blank">
+                                            Göztepe
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        11
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        9
+                                    </td>
+                                    <td class="point">
+                                        14
+                                    </td>
+                                    <td class="point">
+                                        44
+                                    </td>
+                                    <td class="point">
+                                        49
+                                    </td>
+                                    <td class="point">
+                                        -5
+                                    </td>
+                                    <td class="fpoint">
+                                        42
+                                    </td>
+                                </tr>
+                                <tr class="odd ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        12
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/genclerbirligi-ankara/startseite/verein/820" target="_blank">
+                                            Gençlerbirliği
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        9
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        9
+                                    </td>
+                                    <td class="point">
+                                        16
+                                    </td>
+                                    <td class="point">
+                                        39
+                                    </td>
+                                    <td class="point">
+                                        56
+                                    </td>
+                                    <td class="point">
+                                        -17
+                                    </td>
+                                    <td class="fpoint">
+                                        36
+                                    </td>
+                                </tr>
+                                <tr class="even ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        13
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/torku-konyaspor/startseite/verein/2293" target="_blank">
+                                            İH Konyaspor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        8
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        12
+                                    </td>
+                                    <td class="point">
+                                        14
+                                    </td>
+                                    <td class="point">
+                                        36
+                                    </td>
+                                    <td class="point">
+                                        52
+                                    </td>
+                                    <td class="point">
+                                        -16
+                                    </td>
+                                    <td class="fpoint">
+                                        36
+                                    </td>
+                                </tr>
+                                <tr class="odd ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        14
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/tekden-denizlispor/startseite/verein/833" target="_blank">
+                                            Yukatel Denizlispor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        9
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        8
+                                    </td>
+                                    <td class="point">
+                                        17
+                                    </td>
+                                    <td class="point">
+                                        31
+                                    </td>
+                                    <td class="point">
+                                        48
+                                    </td>
+                                    <td class="point">
+                                        -17
+                                    </td>
+                                    <td class="fpoint">
+                                        35
+                                    </td>
+                                </tr>
+                                <tr class="even ">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        15
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/caykur-rizespor/startseite/verein/126" target="_blank">
+                                            Çaykur Rizespor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        10
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        5
+                                    </td>
+                                    <td class="point">
+                                        19
+                                    </td>
+                                    <td class="point">
+                                        38
+                                    </td>
+                                    <td class="point">
+                                        57
+                                    </td>
+                                    <td class="point">
+                                        -19
+                                    </td>
+                                    <td class="fpoint">
+                                        35
+                                    </td>
+                                </tr>
+                                <tr class="odd marker-red">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        16
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/yeni-malatyaspor/startseite/verein/19789">
+                                            BTC Türk Yeni Malatyaspor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        8
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        8
+                                    </td>
+                                    <td class="point">
+                                        18
+                                    </td>
+                                    <td class="point">
+                                        44
+                                    </td>
+                                    <td class="point">
+                                        51
+                                    </td>
+                                    <td class="point">
+                                        -7
+                                    </td>
+                                    <td class="fpoint">
+                                        32
+                                    </td>
+                                </tr>
+                                <tr class="even marker-red">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        17
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/kayserispor/startseite/verein/3205" target="_blank">
+                                            HK Kayserispor
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        8
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        8
+                                    </td>
+                                    <td class="point">
+                                        18
+                                    </td>
+                                    <td class="point">
+                                        40
+                                    </td>
+                                    <td class="point">
+                                        72
+                                    </td>
+                                    <td class="point">
+                                        -32
+                                    </td>
+                                    <td class="fpoint">
+                                        32
+                                    </td>
+                                </tr>
+                                <tr class="odd marker-red">
+                                    <td class="status">
+                                        <span class="spr keeper">
+                                        </span>
+                                    </td>
+                                    <td class="position">
+                                        18
+                                    </td>
+                                    <td class="team_link">
+                                        <a href="https://www.transfermarkt.com.tr/mke-ankaragucu/startseite/verein/868" target="_blank">
+                                            MKE Ankaragücü
+                                        </a>
+                                    </td>
+                                    <td class="point">
+                                        34
+                                    </td>
+                                    <td class="point">
+                                        7
+                                    </td>
+                                    <td class="point standings_draw_column">
+                                        11
+                                    </td>
+                                    <td class="point">
+                                        16
+                                    </td>
+                                    <td class="point">
+                                        31
+                                    </td>
+                                    <td class="point">
+                                        56
+                                    </td>
+                                    <td class="point">
+                                        -25
+                                    </td>
+                                    <td class="fpoint">
+                                        32
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <h2> FORMULA 1 ŞAMPİYONA DURUMU</h2>
+                <div class="ms-table-wrapper"> <table class="ms-table ms-table--result"> <thead> <tr class="ms-table_row"> <th class="ms-table_cell ms-table_cell--header ms-table_field--pos ms-table_field--sticky"> Sıra </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> Pilot </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--total_points"> Puan </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/at-2.svg" alt="Austria" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/at-2.svg" alt="Austria" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points">  <img src="//cdn-1.motorsport.com/static/img/cf/hu-2.svg" alt="Hungary" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/gb-2.svg" alt="United Kingdom" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/gb-2.svg" alt="United Kingdom" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/es-2.svg" alt="Spain" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/be-2.svg" alt="Belgium" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/it-2.svg" alt="Italy" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/it-2.svg" alt="Italy" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/ru-2.svg" alt="Russian Federation" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/de-2.svg" alt="Germany" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/pt-2.svg" alt="Portugal" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/it-2.svg" alt="Italy" width="20" height="12" loading="lazy"> </th> <th class="ms-table_cell ms-table_cell--header ms-table_field--race_points"> <img src="//cdn-1.motorsport.com/static/img/cf/ae-2.svg" alt="United Arab Emirates" width="20" height="12" loading="lazy"> </th> </tr> </thead> <tbody> <tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">1</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/lewis-hamilton/327793/"> <img src="//cdn-1.motorsport.com/static/img/cf/gb-2.svg" alt="United Kingdom" width="20" height="12" loading="lazy"> <span class="name"> Lewis Hamilton </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">63</td> <td class="ms-table_cell ms-table_field--race_points">12<sub style="color:gray">/4</sub></td><td class="ms-table_cell ms-table_field--race_points">25<sub style="color:gray">/1</sub></td><td class="ms-table_cell ms-table_field--race_points">26<sub style="color:gray">/1</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">2</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/valtteri-bottas/336992/"> <img src="//cdn-1.motorsport.com/static/img/cf/fi-2.svg" alt="Finland" width="20" height="12" loading="lazy"> <span class="name"> Valtteri Bottas </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">58</td> <td class="ms-table_cell ms-table_field--race_points">25<sub style="color:gray">/1</sub></td><td class="ms-table_cell ms-table_field--race_points">18<sub style="color:gray">/2</sub></td><td class="ms-table_cell ms-table_field--race_points">15<sub style="color:gray">/3</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">3</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/max-verstappen/329492/"> <img src="//cdn-1.motorsport.com/static/img/cf/nl-2.svg" alt="Netherlands" width="20" height="12" loading="lazy"> <span class="name"> Max Verstappen </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">33</td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">15<sub style="color:gray">/3</sub></td><td class="ms-table_cell ms-table_field--race_points">18<sub style="color:gray">/2</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">4</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/lando-norris/327519/"> <img src="//cdn-1.motorsport.com/static/img/cf/gb-2.svg" alt="United Kingdom" width="20" height="12" loading="lazy"> <span class="name"> Lando Norris </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">26</td> <td class="ms-table_cell ms-table_field--race_points">16<sub style="color:gray">/3</sub></td><td class="ms-table_cell ms-table_field--race_points">10<sub style="color:gray">/5</sub></td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">5</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/alexander-albon/315766/"> <img src="//cdn-1.motorsport.com/static/img/cf/th-2.svg" alt="Thailand" width="20" height="12" loading="lazy"> <span class="name"> Alexander Albon </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">22</td> <td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">12<sub style="color:gray">/4</sub></td><td class="ms-table_cell ms-table_field--race_points">10<sub style="color:gray">/5</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">6</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/sergio-perez/334671/"> <img src="//cdn-1.motorsport.com/static/img/cf/mx-2.svg" alt="Mexico" width="20" height="12" loading="lazy"> <span class="name"> Sergio Perez </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">22</td> <td class="ms-table_cell ms-table_field--race_points">8<sub style="color:gray">/6</sub></td><td class="ms-table_cell ms-table_field--race_points">8<sub style="color:gray">/6</sub></td><td class="ms-table_cell ms-table_field--race_points">6<sub style="color:gray">/7</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">7</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/charles-leclerc/318340/"> <img src="//cdn-1.motorsport.com/static/img/cf/mc-2.svg" alt="Monaco" width="20" height="12" loading="lazy"> <span class="name"> Charles Leclerc </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">18</td> <td class="ms-table_cell ms-table_field--race_points">18<sub style="color:gray">/2</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">8</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/lance-stroll/327515/"> <img src="//cdn-1.motorsport.com/static/img/cf/ca-2.svg" alt="Canada" width="20" height="12" loading="lazy"> <span class="name"> Lance Stroll </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">18</td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">6<sub style="color:gray">/7</sub></td><td class="ms-table_cell ms-table_field--race_points">12<sub style="color:gray">/4</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">9</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/carlos-sainz-jr/318194/"> <img src="//cdn-1.motorsport.com/static/img/cf/es-2.svg" alt="Spain" width="20" height="12" loading="lazy"> <span class="name"> Carlos Sainz Jr. </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">15</td> <td class="ms-table_cell ms-table_field--race_points">10<sub style="color:gray">/5</sub></td><td class="ms-table_cell ms-table_field--race_points">3<sub style="color:gray">/9</sub></td><td class="ms-table_cell ms-table_field--race_points">2<sub style="color:gray">/9</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">10</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/sebastian-vettel/334571/"> <img src="//cdn-1.motorsport.com/static/img/cf/de-2.svg" alt="Germany" width="20" height="12" loading="lazy"> <span class="name"> Sebastian Vettel </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">9</td> <td class="ms-table_cell ms-table_field--race_points">1<sub style="color:gray">/10</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">8<sub style="color:gray">/6</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">11</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/daniel-ricciardo/319631/"> <img src="//cdn-1.motorsport.com/static/img/cf/au-2.svg" alt="Australia" width="20" height="12" loading="lazy"> <span class="name"> Daniel Ricciardo </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">8</td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">4<sub style="color:gray">/8</sub></td><td class="ms-table_cell ms-table_field--race_points">4<sub style="color:gray">/8</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">12</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/pierre-gasly/332371/"> <img src="//cdn-1.motorsport.com/static/img/cf/fr-2.svg" alt="France" width="20" height="12" loading="lazy"> <span class="name"> Pierre Gasly </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">6</td> <td class="ms-table_cell ms-table_field--race_points">6<sub style="color:gray">/7</sub></td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">13</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/esteban-ocon/321501/"> <img src="//cdn-1.motorsport.com/static/img/cf/fr-2.svg" alt="France" width="20" height="12" loading="lazy"> <span class="name"> Esteban Ocon </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">4</td> <td class="ms-table_cell ms-table_field--race_points">4<sub style="color:gray">/8</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">14</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/antonio-giovinazzi/316558/"> <img src="//cdn-1.motorsport.com/static/img/cf/it-2.svg" alt="Italy" width="20" height="12" loading="lazy"> <span class="name"> Antonio Giovinazzi </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">2</td> <td class="ms-table_cell ms-table_field--race_points">2<sub style="color:gray">/9</sub></td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">15</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/daniil-kvyat/319683/"> <img src="//cdn-1.motorsport.com/static/img/cf/ru-2.svg" alt="Russian Federation" width="20" height="12" loading="lazy"> <span class="name"> Daniil Kvyat </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">1</td> <td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">1<sub style="color:gray">/10</sub></td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">16</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/kevin-magnussen/327160/"> <img src="//cdn-1.motorsport.com/static/img/cf/dk-2.svg" alt="Denmark" width="20" height="12" loading="lazy"> <span class="name"> Kevin Magnussen </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points">1</td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">1<sub style="color:gray">/10</sub></td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">17</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/kimi-raikkonen/327251/"> <img src="//cdn-1.motorsport.com/static/img/cf/fi-2.svg" alt="Finland" width="20" height="12" loading="lazy"> <span class="name"> Kimi Raikkonen </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points"></td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">18</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/nicholas-latifi/330670/"> <img src="//cdn-1.motorsport.com/static/img/cf/ca-2.svg" alt="Canada" width="20" height="12" loading="lazy"> <span class="name"> Nicholas Latifi </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points"></td> <td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">19</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/romain-grosjean/333778/"> <img src="//cdn-1.motorsport.com/static/img/cf/fr-2.svg" alt="France" width="20" height="12" loading="lazy"> <span class="name"> Romain Grosjean </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points"></td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr><tr class="ms-table_row"> <td class="ms-table_cell ms-table_field--pos ms-table_field--sticky">20</td> <td class="ms-table_cell ms-table_field--driver ms-table_field--sticky" style="left: 48px;"> <a class="ms-link" href="/driver/george-russell/322533/"> <img src="//cdn-1.motorsport.com/static/img/cf/gb-2.svg" alt="United Kingdom" width="20" height="12" loading="lazy"> <span class="name"> George Russell </span> </a> </td> <td class="ms-table_cell ms-table_field--total_points"></td> <td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points"> - </td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td><td class="ms-table_cell ms-table_field--race_points">-</td></tr> </tbody> </table> </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
